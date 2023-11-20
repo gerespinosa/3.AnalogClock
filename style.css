@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Poppins', sans-serif ;
+}
+
+body{
+    background-image: linear-gradient(90deg, lightgrey, grey);
+}
+
+.container{
+    display: flex;
+    gap: 2em;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.titulo{
+    font-size: 50px;
+}
+
+.nombre{
+    position: absolute;
+    top: 20%;
+    left: 100px;
+    z-index: 0;
+    padding: 0 5px;
+    border: 2px black solid;
+}
+
+.reloj{
+    content: "";
+    background-color: rgba(0, 0, 0, 0,3);
+    width: 300px;
+    height: 300px;
+    border: black 15px solid;
+    border-radius: 100%;
+    position: relative;
+}
+
+.reloj::after{
+    content: "";
+    background-color: rgba(0, 0, 0, 1);
+    width: 5px;
+    height: 5px;
+    border: black 5px solid;
+    border-radius: 100%;
+    position: absolute;
+    left: 145px;
+    top: 145px;
+}
+
+
+.segundero{
+    content: "";
+    background-color: rgba(0, 0, 0, 1);
+    height: 150px;
+    width: 2px;
+    border: 1px solid black;
+    border-radius: 50% 50% 0% 0%;
+    position: absolute;
+    left: 149px;
+    transform-origin: 50% 100%;
+}
+
+.minutero{
+    content: "";
+    background-color: rgba(180, 0, 0, 1);
+    height: 150px;
+    width: 5px;
+    border: 1px solid red;
+    border-radius: 50% 50% 0% 0%;
+    position: absolute;
+    left: 147.5px;
+    transform-origin: 50% 100%;
+}
+
+
+.horario{
+    content: "";
+    background-color: rgba(0, 180, 0, 1);
+    height: 150px;
+    width: 7px;
+    border: 1px solid green;
+    border-radius: 50% 50% 0% 0%;
+    position: absolute;
+    left: 146.50px;
+    transform-origin: 50% 100%;
+}
+
+.numero{
+    font-size: 20px;
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    left: 150px;
+    transform-origin: 0% 50%;
+}
+
+
+
+.hora1{
+    transform: rotate(28deg);
+}
+.hora2{
+    transform: rotate(58deg);
+}
+.hora3{
+    transform: rotate(88deg);
+}
+.hora4{
+    transform: rotate(118deg);
+}
+.hora5{
+    transform: rotate(148deg);
+}
+.hora6{
+    transform: rotate(178deg);
+}
+.hora7{
+    transform: rotate(208deg);
+}
+.hora8{
+    transform: rotate(238deg);
+}
+.hora9{
+    transform: rotate(268deg);
+}
+.hora10{
+    transform: rotate(298deg);
+}
+.hora11{
+    transform: rotate(328deg);
+}
+.hora12{
+    transform: rotate(358deg);
+}
